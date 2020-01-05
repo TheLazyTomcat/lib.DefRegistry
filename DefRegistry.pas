@@ -7,12 +7,39 @@
 -------------------------------------------------------------------------------}
 {===============================================================================
 
-DefRegistry
+  DefRegistry
 
-©František Milt 2015-02-20
+    Standard TRegistry class read functions, when called for non-existing or
+    otherwise inaccessible value, will raise an exception.
+    TDefRegistry class available here is a direct descendant of TRegistry that
+    provides wrapper functions which catch these errors and instead indicate
+    failure in result value or by returning a default value instead of a read
+    one, similarly to functions for text to number conversion TryStrToInt and
+    StrToIntDef.
 
-Version 1.1
+  Version 1.1 (2015-02-20)
 
+  Last change 2020-01-05
+
+  ©2015-2020 František Milt
+
+  Contacts:
+    František Milt: frantisek.milt@gmail.com
+
+  Support:
+    If you find this code useful, please consider supporting its author(s) by
+    making a small donation using the following link(s):
+
+      https://www.paypal.me/FMilt
+
+  Changelog:
+    For detailed changelog and history please refer to this git repository:
+
+      github.com/TheLazyTomcat/Lib.DefRegistry
+
+  Dependencies:
+    none
+    
 ===============================================================================}
 unit DefRegistry;
 
