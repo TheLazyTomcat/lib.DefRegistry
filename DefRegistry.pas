@@ -19,7 +19,7 @@
 
   Version 1.1 (2015-02-20)
 
-  Last change 2020-01-05
+  Last change 2020-08-02
 
   ©2015-2020 František Milt
 
@@ -44,8 +44,9 @@
 unit DefRegistry;
 
 {$IFDEF FPC}
-  {$MODE ObjFPC}{$H+}
+  {$MODE ObjFPC}
 {$ENDIF}
+{$H+}
 
 interface
 
